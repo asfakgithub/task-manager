@@ -13,7 +13,7 @@ function AddTask() {
   const handleSubmit = async e => {
     e.preventDefault();
     if (!form.title) return alert("Title is required");
-    await fetch("http://localhost:5000/tasks", {
+    await fetch("https://task-manager-0mvc.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
