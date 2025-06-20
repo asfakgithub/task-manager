@@ -22,7 +22,7 @@ function EditTask() {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    await fetch(`http://localhost:5000/tasks/${id}`, {
+    await fetch(`https://task-manager-0mvc.onrender.com/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
