@@ -8,7 +8,7 @@ function EditTask() {
   const [form, setForm] = useState({ title: "", description: "", status: "todo", dueDate: "" });
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tasks`)
+    fetch(`https://task-manager-0mvc.onrender.com`)
       .then(res => res.json())
       .then(data => {
         const task = data.find(t => String(t.id) === id);
