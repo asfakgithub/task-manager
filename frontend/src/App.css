@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for entire app */
+.app-wrapper {
+  padding: 20px;
+}
+
+/* Navigation styles */
+.app-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-separator {
+  color: #555;
+}
+
+/* Container for main content */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Task card (fallback default style if used globally) */
+.task-card {
+  background: #eef;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid blue;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+/* Button */
+button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
