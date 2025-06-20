@@ -6,13 +6,13 @@ function Home() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/tasks")
+    fetch("https://task-manager-0mvc.onrender.com")
       .then(res => res.json())
       .then(data => setTasks(data));
   }, []);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/tasks/${id}`, { method: 'DELETE' });
+    await fetch(`https://task-manager-0mvc.onrender.com/${id}`, { method: 'DELETE' });
     setTasks(prev => prev.filter(task => task.id !== id));
   };
 
